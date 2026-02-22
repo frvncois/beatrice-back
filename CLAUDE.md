@@ -10,15 +10,15 @@ Beatrice-Back is a [Strapi v5](https://strapi.io) headless CMS backend. It is a 
 
 ```bash
 # Development
-yarn develop        # Start dev server with hot reload (admin + API)
-yarn build          # Build admin panel for production
-yarn start          # Start production server (no hot reload)
+npm run develop     # Start dev server with hot reload (admin + API)
+npm run build       # Build admin panel for production
+npm run start       # Start production server (no hot reload)
 
 # Utilities
-yarn strapi console # Interactive REPL with Strapi context
+npm run strapi console # Interactive REPL with Strapi context
 ```
 
-There is no test runner configured out of the box. Strapi uses its own CLI — always use `yarn strapi <command>` rather than invoking `strapi` directly.
+This project uses **npm** (`package-lock.json`). Do not use yarn. Strapi uses its own CLI — always use `npm run strapi <command>` rather than invoking `strapi` directly.
 
 ## Architecture
 
