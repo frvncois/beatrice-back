@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "about",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About",
+    "description": "Content for the About section: hero image, intro paragraph, and details."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "intro": {
+      "type": "text",
+      "required": true
+    },
+    "details": {
+      "type": "richtext"
+    }
+  }
+}

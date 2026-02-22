@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "play_projects",
+  "info": {
+    "singularName": "play-project",
+    "pluralName": "play-projects",
+    "displayName": "Play Project",
+    "description": "A performance or collaboration project shown in the Play section. Contains a gallery of images and optional links/video."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.image-item"
+    },
+    "links": {
+      "type": "json"
+    },
+    "video": {
+      "type": "string"
+    }
+  }
+}

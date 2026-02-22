@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_image_items",
+  "info": {
+    "displayName": "Image Item",
+    "icon": "picture",
+    "description": "An image with its alt text. Used in play-project galleries."
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "alt": {
+      "type": "string"
+    }
+  }
+}

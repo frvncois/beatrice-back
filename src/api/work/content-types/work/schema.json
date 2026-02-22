@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "works",
+  "info": {
+    "singularName": "work",
+    "pluralName": "works",
+    "displayName": "Work",
+    "description": "A musical composition. Displayed in the Work section of the site."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "year": {
+      "type": "integer",
+      "required": true
+    },
+    "duration": {
+      "type": "string",
+      "required": true
+    },
+    "key": {
+      "type": "string"
+    },
+    "instrumentation": {
+      "type": "json",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["master", "dummy"],
+      "default": "master",
+      "required": true
+    },
+    "programNote": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.note-block"
+    },
+    "performanceNote": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.note-block"
+    }
+  }
+}

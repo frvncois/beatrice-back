@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_note_blocks",
+  "info": {
+    "displayName": "Note Block",
+    "icon": "file-text",
+    "description": "Structured note with main text, details, and additional notes. Used for program notes and performance notes."
+  },
+  "options": {},
+  "attributes": {
+    "main": {
+      "type": "text"
+    },
+    "details": {
+      "type": "text"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}
