@@ -11,6 +11,7 @@ export interface MoodboardContent extends Struct.ComponentSchema {
     Image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     Link: Schema.Attribute.String;
     Note: Schema.Attribute.Text;
+    Title: Schema.Attribute.String;
     Type: Schema.Attribute.Enumeration<['Video', 'Image', 'Note', 'Link']>;
     YouTube: Schema.Attribute.String;
   };

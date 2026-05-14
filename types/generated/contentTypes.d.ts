@@ -520,7 +520,7 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    work: Schema.Attribute.Relation<'manyToOne', 'api::work.work'>;
+    works: Schema.Attribute.Relation<'manyToMany', 'api::work.work'>;
   };
 }
 
@@ -546,6 +546,7 @@ export interface ApiMoodboardMoodboard extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    Subtitle: Schema.Attribute.String;
     Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -596,7 +597,7 @@ export interface ApiWorkWork extends Struct.CollectionTypeSchema {
   };
   attributes: {
     categories: Schema.Attribute.Relation<
-      'oneToMany',
+      'manyToMany',
       'api::category.category'
     >;
     createdAt: Schema.Attribute.DateTime;

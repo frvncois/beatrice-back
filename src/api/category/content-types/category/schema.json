@@ -14,9 +14,9 @@
     "title": {
       "type": "string"
     },
-    "work": {
+    "works": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::work.work",
       "inversedBy": "categories"
     }
