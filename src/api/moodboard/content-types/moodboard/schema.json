@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "moodboards",
+  "info": {
+    "singularName": "moodboard",
+    "pluralName": "moodboards",
+    "displayName": "Moodboard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "component",
+      "component": "moodboard.content",
+      "repeatable": true
+    }
+  }
+}

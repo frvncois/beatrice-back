@@ -18,7 +18,7 @@
     },
     "subtitle": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "year": {
       "type": "integer",
@@ -26,30 +26,59 @@
     },
     "duration": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "key": {
       "type": "string"
     },
     "instrumentation": {
-      "type": "json",
-      "required": true
+      "type": "text"
     },
-    "category": {
-      "type": "enumeration",
-      "enum": ["master", "dummy"],
-      "default": "master",
-      "required": true
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "work"
     },
     "programNote": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.note-block"
+      "component": "shared.note-block",
+      "repeatable": false
     },
     "performanceNote": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.note-block"
+      "component": "shared.note-block",
+      "repeatable": false
+    },
+    "Lineup": {
+      "type": "component",
+      "component": "shared.lineup",
+      "repeatable": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "links": {
+      "type": "component",
+      "component": "shared.link-block",
+      "repeatable": true
     }
   }
 }

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_lineups",
+  "info": {
+    "displayName": "Lineup"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

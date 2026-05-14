@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_link_blocks",
+  "info": {
+    "displayName": "Link block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

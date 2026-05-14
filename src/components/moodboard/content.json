@@ -1,0 +1,114 @@
+{
+  "collectionName": "components_moodboard_contents",
+  "info": {
+    "displayName": "Content"
+  },
+  "options": {},
+  "attributes": {
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Video",
+        "Image",
+        "Note",
+        "Link"
+      ]
+    },
+    "YouTube": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "Type"
+            },
+            "Video"
+          ]
+        }
+      }
+    },
+    "Image": {
+      "type": "media",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "Type"
+            },
+            "Image"
+          ]
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Note": {
+      "type": "text",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "Type"
+            },
+            "Note"
+          ]
+        }
+      }
+    },
+    "CoverVideo": {
+      "type": "media",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "Type"
+            },
+            "Video"
+          ]
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "Link": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "Type"
+            },
+            "Link"
+          ]
+        }
+      }
+    },
+    "CoverLink": {
+      "type": "media",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "Type"
+            },
+            "Link"
+          ]
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}
